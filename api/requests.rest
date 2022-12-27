@@ -1,0 +1,56 @@
+GET http://localhost:3001/todos/63aabf3610c64fcf5002dc26
+
+###
+
+PUT http://localhost:3001/todo/new/63aabf3610c64fcf5002dc26
+Content-Type: application/json
+
+{
+    "text": "Order pizza",
+    "priority": 1
+}
+
+###
+
+DELETE http://localhost:3001/todo/delete/63aabf3610c64fcf5002dc26
+
+###
+
+DELETE http://localhost:3001/todo/delete
+
+###
+
+GET http://localhost:3001/todo/complete/63a411263e83b5ab376e28fd
+
+###
+
+PUT http://localhost:3001/todo/update/63a5e53a8b37b0b1fb800d38
+Content-Type: application/json
+
+{
+    "priority": 2
+}
+
+###
+POST http://localhost:3001/user/register/
+Content-Type: application/json
+
+{
+    "email": "t",
+    "password": "l"
+}
+
+###
+POST http://localhost:3001/user/login/
+Content-Type: application/json
+
+{
+    "email": "taken@gmail.com",
+    "password": "luckyjson112"
+}
+
+###
+GET http://localhost:3001/users
+
+###
+DELETE http://localhost:3001/user/delete
