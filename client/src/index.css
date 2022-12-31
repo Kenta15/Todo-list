@@ -12,12 +12,6 @@ code {
     monospace;
 }
 
-.title{
-  position:relative;
-  top:35px;
-  margin-left:15vw;
-}
-
 .todos{
   margin-top:70px;
 }
@@ -70,7 +64,7 @@ code {
 .show-text{
   position:absolute;
   width:100px;
-  left:55vw;
+  left:420px;
   border-radius:5px;
   background:grey;
   padding:5px;
