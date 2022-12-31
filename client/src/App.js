@@ -1,7 +1,5 @@
 import {useState, useEffect} from 'react'
 import Clock from './custom/Clock'
-import Register from './custom/auth/Register'
-import Login from './custom/auth/Login'
 import Remaining from './custom/Remaining'
 
 const API_BASE = 'http://localhost:3001'
@@ -123,7 +121,7 @@ function App() {
 
   return (
     <div className="App">
-      <h4>Your tasks</h4>
+      <h2 className="title">Your tasks</h2>
       <Clock />
       <div className="todos">
         {todos.length > 0 ? todos.map(todo => (
@@ -179,7 +177,6 @@ function App() {
           </div>
         </div>
       ) : ''}
-      {/* <Login /> */}
     </div>
   );
 }
